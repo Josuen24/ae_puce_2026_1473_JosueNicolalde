@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pucetec.events.services.ReservationServiceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-07-04T03:44:07.564Z" hostname="JOSUÉ" time="0.17">
+  <properties/>
+  <testcase name="getAllReservations retorna lista de ReservationResponse()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.08"/>
+  <testcase name="getAllReservations retorna lista vacia cuando no hay reservas()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.004"/>
+  <testcase name="createReservation retorna ReservationResponse cuando los datos son validos()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.014"/>
+  <testcase name="getReservationById retorna ReservationResponse cuando existe()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.007"/>
+  <testcase name="createReservation lanza EventNotFoundException cuando el evento no existe()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.006"/>
+  <testcase name="cancelReservation lanza ReservationAlreadyCancelledException cuando ya esta cancelada()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.009"/>
+  <testcase name="cancelReservation lanza ReservationNotFoundException cuando la reserva no existe()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.006"/>
+  <testcase name="createReservation lanza ReservationLimitExceededException cuando el asistente tiene 4 reservas activas()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.006"/>
+  <testcase name="createReservation lanza SoldOutException cuando no hay tickets disponibles()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.007"/>
+  <testcase name="createReservation lanza AttendeeNotFoundException cuando el asistente no existe()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.005"/>
+  <testcase name="getReservationById lanza ReservationNotFoundException cuando no existe()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.006"/>
+  <testcase name="cancelReservation retorna ReservationResponse con status CANCELLED()" classname="com.pucetec.events.services.ReservationServiceTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

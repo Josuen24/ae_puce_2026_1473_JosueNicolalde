@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "Events API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Events (Public)",
+      "item": [
+        {
+          "name": "GET All Events (public)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "http://localhost:8080/api/events", "host": ["localhost"], "port": "8080", "path": ["api", "events"] }
+          }
+        },
+        {
+          "name": "GET Event by ID (public)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "http://localhost:8080/api/events/1", "host": ["localhost"], "port": "8080", "path": ["api", "events", "1"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Events (Private)",
+      "item": [
+        {
+          "name": "POST Create Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Rock Fest 2026\",\n  \"venue\": \"Quito Arena\",\n  \"totalTickets\": 100\n}" },
+            "url": { "raw": "http://localhost:8080/api/events", "host": ["localhost"], "port": "8080", "path": ["api", "events"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Attendees",
+      "item": [
+        {
+          "name": "POST Create Attendee",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Ana Torres\",\n  \"email\": \"ana@puce.edu.ec\"\n}" },
+            "url": { "raw": "http://localhost:8080/api/attendees", "host": ["localhost"], "port": "8080", "path": ["api", "attendees"] }
+          }
+        },
+        {
+          "name": "GET All Attendees",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
+            "url": { "raw": "http://localhost:8080/api/attendees", "host": ["localhost"], "port": "8080", "path": ["api", "attendees"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reservations",
+      "item": [
+        {
+          "name": "POST Create Reservation",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"attendeeId\": 1,\n  \"eventId\": 1\n}" },
+            "url": { "raw": "http://localhost:8080/api/reservations", "host": ["localhost"], "port": "8080", "path": ["api", "reservations"] }
+          }
+        },
+        {
+          "name": "PUT Cancel Reservation",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
+            "url": { "raw": "http://localhost:8080/api/reservations/1/cancel", "host": ["localhost"], "port": "8080", "path": ["api", "reservations", "1", "cancel"] }
+          }
+        },
+        {
+          "name": "GET All Reservations",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
+            "url": { "raw": "http://localhost:8080/api/reservations", "host": ["localhost"], "port": "8080", "path": ["api", "reservations"] }
+          }
+        },
+        {
+          "name": "GET Reservation by ID",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{access_token}}" }],
+            "url": { "raw": "http://localhost:8080/api/reservations/1", "host": ["localhost"], "port": "8080", "path": ["api", "reservations", "1"] }
+          }
+        }
+      ]
+    }
+  ]
+}

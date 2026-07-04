@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pucetec.events.services.EventServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-07-04T03:44:07.405Z" hostname="JOSUÉ" time="0.151">
+  <properties/>
+  <testcase name="getAllEvents retorna lista de EventResponse()" classname="com.pucetec.events.services.EventServiceTest" time="0.107"/>
+  <testcase name="getEventById lanza EventNotFoundException cuando el evento no existe()" classname="com.pucetec.events.services.EventServiceTest" time="0.009"/>
+  <testcase name="getEventById retorna EventResponse cuando el evento existe()" classname="com.pucetec.events.services.EventServiceTest" time="0.002"/>
+  <testcase name="getAllEvents retorna lista vacia cuando no hay eventos()" classname="com.pucetec.events.services.EventServiceTest" time="0.002"/>
+  <testcase name="createEvent lanza InvalidCapacityException cuando totalTickets es menor a 1()" classname="com.pucetec.events.services.EventServiceTest" time="0.008"/>
+  <testcase name="createEvent retorna EventResponse cuando los datos son validos()" classname="com.pucetec.events.services.EventServiceTest" time="0.005"/>
+  <testcase name="createEvent lanza BlankFieldException cuando el venue esta en blanco()" classname="com.pucetec.events.services.EventServiceTest" time="0.007"/>
+  <testcase name="createEvent lanza BlankFieldException cuando el nombre esta en blanco()" classname="com.pucetec.events.services.EventServiceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

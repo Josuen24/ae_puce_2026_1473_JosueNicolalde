@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - com.pucetec.events.services.ReservationServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../index.html">all</a> &gt; 
+<span class="breadcrumb">com.pucetec.events.services.ReservationServiceTest</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>ReservationServiceTest</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">0.171s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="test-results">
+<thead>
+<tr>
+<th>Child</th>
+<th hidden="">Name</th>
+<th>Tests</th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Duration</th>
+<th>Success rate</th>
+</tr>
+</thead>
+<tr>
+<td class="success">cancelReservation lanza ReservationAlreadyCancelledException cuando ya esta cancelada()</td>
+<td class="path" hidden="">cancelReservation lanza ReservationAlreadyCancelledException cuando ya esta cancelada()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.009s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">cancelReservation lanza ReservationNotFoundException cuando la reserva no existe()</td>
+<td class="path" hidden="">cancelReservation lanza ReservationNotFoundException cuando la reserva no existe()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">cancelReservation retorna ReservationResponse con status CANCELLED()</td>
+<td class="path" hidden="">cancelReservation retorna ReservationResponse con status CANCELLED()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.007s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">createReservation lanza AttendeeNotFoundException cuando el asistente no existe()</td>
+<td class="path" hidden="">createReservation lanza AttendeeNotFoundException cuando el asistente no existe()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.005s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">createReservation lanza EventNotFoundException cuando el evento no existe()</td>
+<td class="path" hidden="">createReservation lanza EventNotFoundException cuando el evento no existe()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">createReservation lanza ReservationLimitExceededException cuando el asistente tiene 4 reservas activas()</td>
+<td class="path" hidden="">createReservation lanza ReservationLimitExceededException cuando el asistente tiene 4 reservas activas()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">createReservation lanza SoldOutException cuando no hay tickets disponibles()</td>
+<td class="path" hidden="">createReservation lanza SoldOutException cuando no hay tickets disponibles()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.007s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">createReservation retorna ReservationResponse cuando los datos son validos()</td>
+<td class="path" hidden="">createReservation retorna ReservationResponse cuando los datos son validos()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.014s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">getAllReservations retorna lista de ReservationResponse()</td>
+<td class="path" hidden="">getAllReservations retorna lista de ReservationResponse()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.080s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">getAllReservations retorna lista vacia cuando no hay reservas()</td>
+<td class="path" hidden="">getAllReservations retorna lista vacia cuando no hay reservas()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.004s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">getReservationById lanza ReservationNotFoundException cuando no existe()</td>
+<td class="path" hidden="">getReservationById lanza ReservationNotFoundException cuando no existe()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">getReservationById retorna ReservationResponse cuando existe()</td>
+<td class="path" hidden="">getReservationById retorna ReservationResponse cuando existe()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.007s</td>
+<td class="success">100%</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 3 jul 2026 22:44:07</p>
+</div>
+</div>
+</body>
+</html>
